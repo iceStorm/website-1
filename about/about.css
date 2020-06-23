@@ -1,0 +1,97 @@
+
+
+
+#about-header {
+    padding: 20px 120px;
+    background-color: rgb(236, 236, 236);
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+
+    opacity: 0;
+    animation: push-up 0.75s ease-in-out forwards;
+}
+
+
+#about-header >div:last-child {
+    background-image: url(../img/photo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    float: right;
+}
+
+
+
+
+
+#about-middle {
+    background-image: url(../img/test-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* height: 300px; */
+    padding: 70px 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    opacity: 0;
+    animation: push-up 0.75s 200ms ease-in-out forwards;
+}
+
+#about-middle >h1 {
+    color: white;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+
+    opacity: 0;
+    animation: push-up 0.75s 400ms ease-in-out forwards;
+}
+
+#about-middle >.guest-rating {
+    background-color: var(--primary-text-hover-color);
+    padding: 20px;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#about-middle >.guest-rating:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+#about-middle >.guest-rating >.avatar >img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+
+#about-middle >.guest-rating:not(:last-child) {
+    opacity: 0;
+    animation: push-up 0.75s 600ms ease-in-out forwards;
+}
+
+#about-middle >.guest-rating:last-child {
+    opacity: 0;
+    animation: push-up 0.75s 800ms ease-in-out forwards;
+}

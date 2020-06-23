@@ -1,0 +1,94 @@
+
+
+h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+
+section {
+    overflow: auto;
+}
+
+
+
+section#info {
+    height: 300px;
+
+    color: #fff;
+    background-color: #000;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+section#info >div:first-child {
+    background-image: url(../img/photo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: aliceblue; */
+}
+
+section#info >div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 10px;
+
+    /* background-color: antiquewhite; */
+}
+
+section#info >div:last-child h4 {
+    margin-bottom: 25px;
+}
+
+section#info >div:last-child a {
+    margin-top: 35px;
+
+    color: black;
+    background-color: white;
+
+    padding: 15px 25px;
+    text-transform: capitalize;
+}
+
+
+
+section#feature {
+    height: 300px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+section#feature >div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+    padding: 15px 35px;
+}
+
+section#feature >div:nth-child(2) {
+    background-color: var(--primary-text-color);
+}
+
+
+section#feature >div >.icon-group >.icon-image >img {
+    width: 20%;
+    margin-bottom: 20px;
+    pointer-events: none;
+}
+
+section#feature >div >.icon-group >.icon-title {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
