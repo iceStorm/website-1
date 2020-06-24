@@ -3,7 +3,11 @@
 
 #contact-middle {
     padding: 30px 120px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--primary-light-background);
+
+
+    opacity: 0;
+    animation: push-up .75s ease forwards;
 }
 
 #contact-middle >h1 {
@@ -42,6 +46,8 @@
 #contact-middle >form >div >input:not([type=submit]):focus,
 #contact-middle >form >div >textarea:focus {
     border: 1px solid red;
+    /* background-color: rgb(248, 244, 236); */
+    
     box-shadow: 0 0 0px 5px rgba(255, 166, 0, 0.397);
 }
 
@@ -64,11 +70,14 @@
     display: grid;
     grid-template-columns: auto auto auto;
 
-    height: 250px;
+    height: 200px;
     width: 100%;
 
     background-color: rgba(0, 0, 0, 0.89);
     color: white;
+
+    opacity: 0;
+    animation: push-up .75s ease 200ms forwards;
 }
 
 #contact-footer >div {

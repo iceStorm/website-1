@@ -3,7 +3,7 @@
 
 #about-header {
     padding: 20px 120px;
-    background-color: rgb(236, 236, 236);
+    background-color: var(--primary-light-background);
 
     /* display: flex;
     justify-content: space-between;
