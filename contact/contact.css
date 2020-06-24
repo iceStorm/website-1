@@ -7,7 +7,7 @@
 
 
     opacity: 0;
-    animation: push-up .75s ease forwards;
+    animation: zoom .75s ease forwards;
 }
 
 #contact-middle >h1 {
@@ -39,6 +39,7 @@
     font-size: 16px;
     border: 1px solid rgb(184, 182, 182);
     outline: none;
+    border-radius: 3px;
 
     transition: all .15s ease;
 }
