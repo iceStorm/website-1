@@ -1,0 +1,95 @@
+
+
+#signup-middle {
+    background-color: var(--primary-light-background);
+    height: 70%;
+    width: 100%;
+
+    padding: 30px 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    animation: zoom .75s ease forwards;
+}
+
+
+
+#signup-form {
+    width: inherit;
+}
+
+#signup-form > #header {
+    margin-bottom: 40px;
+}
+
+
+
+#signup-form > #middle > table {
+    width: 100%;
+}
+
+#signup-form > #middle > table td {
+    height: 70px;
+    /* background-color: antiquewhite; */
+}
+#signup-form > #middle > table td:first-child {
+    text-align: right;
+    padding-right: 30px;
+    width: 200px;
+}
+
+
+
+#signup-form > #middle input:not([type=radio]):not([type=checkbox]) {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 5px;
+
+    font-size: 16px;
+    border: 1px solid rgb(184, 182, 182);
+    outline: none;
+    border-radius: 3px;
+
+    transition: all .15s ease;
+}
+
+#signup-form > #middle input:not([type=radio]):not([type=checkbox]):focus {
+    border: 1px solid red;
+    /* background-color: rgb(248, 244, 236); */
+    
+    box-shadow: 0 0 0px 5px rgba(255, 166, 0, 0.397);
+}
+
+
+table tr:nth-child(4) td div {
+    display: inline-block;
+}
+
+table tr:last-child td {
+    padding-top: 20px;
+}
+
+
+
+#signup-form > #footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup-form > #footer div {
+    width: 100px;
+}
+#signup-form > #footer input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+    border: none;
+}

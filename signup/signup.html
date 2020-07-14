@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../animation.css">
+    <script src="./signup.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="../index.html" title="Home page">BVU</a>
+            </div>
+            <div></div>
+            <div></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="../index.html" title="Goto Home page">Home</a></li>
+                    <li><a href="../about/about.html" title="Goto About page">About</a></li>
+                    <li><a href="../contact/contact.html" title="Goto Contact page">Contact</a></li>
+                    <li><a href="#" class="active-page" title="Goto SignUp page">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="signup-middle">
+        <form action="" id="signup-form" onsubmit="event.preventDefault(); submitForm();">
+            <div id="header">
+                <h1 class="title"><span class="hight-light">Sign </span>Up</h1>
+            </div>
+            <div id="middle">
+                <table table-align="center">
+                    <tbody>
+                        <tr>
+                            <td>First Name</td>
+                            <td>
+                                <input type="text" id="txt-first-name" pattern="(\w{2,})+" placeholder="First Name" required>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Last Name</td>
+                            <td>
+                                <input type="text" id="txt-last-name" pattern="(\w{2,})+" placeholder="Last Name" required>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td>
+                                <select name="" id="sl-date" required>
+                                    <option hidden>Date</option>
+                                </select>
+    
+                                <select name="" id="sl-month" required>
+                                    <option hidden>Month</option>
+                                </select>
+    
+                                <select name="" id="sl-year" required>
+                                    <option hidden>Year</option>
+                                </select>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <div>
+                                    <input type="radio" name="gender" id="check-male">
+                                    <label for="check-male">Male</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="gender" id="check-female">
+                                    <label for="check-female">FeMale</label>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Country</td>
+                            <td>
+                                <select name="" id="sl-country" required>
+                                    <option value="" hidden>Country</option>
+                                    <option value="vi">VietNam</option>
+                                    <option value="us">United State</option>
+                                    <option value="ch">China</option>
+                                </select>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>E-mail</td>
+                            <td>
+                                <input type="email" name="" id="txt-email" value="" pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$" placeholder="Email" required>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Phone</td>
+                            <td>
+                                <input type="text" name="" id="txt-phone" pattern="^(\d{10,11})$" value="" placeholder="Phone" required>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Password</td>
+                            <td>
+                                <input type="password" pattern=".{6,}" id="txt-password" value="" required>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>Confirm Password</td>
+                            <td>
+                                <input type="password" name="" pattern=".{6,}" id="txt-confirm-password" value="" required>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="" id="check-agree" required>
+                                <label for="check-agree">I agree to Terms of use</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+    
+            <div id="footer">
+                <input type="submit" value="Submit" id="btn-submit">
+                <div></div>
+                <input type="reset" value="Reset" id="btn-reset">
+            </div>
+        </form>
+    </div>
+
+    
+    <footer>Hotel BT &copy; 2019, All Rights Reserved</footer>
+</body>
+</html>

@@ -24,6 +24,7 @@
                     <li><a href="../index.html" title="Goto Home page">Home</a></li>
                     <li><a href="../about/about.html" title="Goto About page">About</a></li>
                     <li><a href="#"  class="active-page" title="Goto Contact page">Contact</a></li>
+                    <li><a href="../signup/signup.html" title="Goto SignUp page">Sign Up</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,11 +38,11 @@
         <form action="#">
             <div>
                 <label for="txt-name">Name</label><br>
-                <input type="text" name="" id="txt-name" required autofocus>
+                <input type="text" name="" id="txt-name" required autofocus pattern="(\w{2,})+">
             </div>
             <div>
                 <label for="txt-email">E-mail</label><br>
-                <input type="email" name="" id="txt-email" required>
+                <input type="email" name="" id="txt-email" pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$" required>
             </div>
             <div>
                 <label for="txt-message">Message</label><br>
